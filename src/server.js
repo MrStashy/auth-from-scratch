@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 const loginRouter = require('../src/routers/login');
-const registerRouter = require('../src/routers/login')
+const registerRouter = require('../src/routers/register')
 
 app.use('/login', loginRouter);
 app.use('/register', registerRouter);
