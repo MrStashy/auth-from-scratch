@@ -13,8 +13,10 @@ app.use(express.urlencoded({ extended: true }));
 
 const loginRouter = require('../src/routers/login');
 const registerRouter = require('../src/routers/register')
+const secretRouter = require('../src/routers/secret')
 
 app.use('/login', loginRouter);
 app.use('/register', registerRouter);
+app.use('/secret', secretRouter)
 
 module.exports = app
